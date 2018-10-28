@@ -23,9 +23,11 @@ On the other hand, if you write:
 ```
 let pet = "hamster";
 let pet = "fish";
+
 // you will get the following error:
 // Uncaught SyntaxError: Identifier 'pet' has already been declared
 // thus, the only way to assign the value fish to the variable pet is:
+
 pet = "fish";
 ```
 Although everyone advices to use `let` and `const` nowadays, it may be preferable to use `var` when you simply test various scripts in the console log and every time you run the script you declare the same variables. This would help you to simplify and speed up things a little bit because you would only use one browser tab to test your code, while you will need a new browser tab every time you run a script that contains `let` or `const`.
