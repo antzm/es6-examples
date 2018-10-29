@@ -33,5 +33,19 @@ pet = "fish";
 Although everyone advices to use `let` and `const` nowadays, it may be preferable to use `var` when you simply test various scripts in the console log and every time you run the script you declare the same variables. This would help you to simplify and speed up things a little bit because you would only use one browser tab to test your code, while you will need a new browser tab every time you run a script that contains `let` or `const`.
 
 ### Performance issues between `let`, `const` and `var`
-It may sound strange but there are performance issues in the current browsers because intensive calculations using `let` and `const` run much faster compared to using `var`.
+It may sound strange but there are performance issues in the current browsers, because intensive calculations using `let` and `const` run much faster compared to using `var`.
 This is not something standard though, as it depends largely on the code and the browser. In any case, it looks like the current browsers are better optimized for `let` and `const` and less optimized for `var`.
+
+To test these differences in the performance between `let` and `var`, you may try running the code below, which gives an approximation of PI, first with `let`, and then by replacing `let` with `var`.
+
+```
+console.time('Total time for Pi calculation: ');
+let n=0, sum=0;
+for (let i=1; i<1000000; i++) {
+	n = 1 / (i*i);
+	sum += n;
+};
+console.log("pi approximation = " + Math.sqrt(sum*6));
+console.timeEnd('Total time for Pi calculation: ');
+```
+Try also to run the code in different browsers, so to compare the results between the browsers.
