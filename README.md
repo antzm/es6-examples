@@ -49,3 +49,17 @@ console.log("pi approximation = " + Math.sqrt(sum*6));
 console.timeEnd('Total time for Pi calculation: ');
 ```
 Try also to run the code in different browsers, so to compare the results between the browsers.
+
+## Destructuring values from an array
+
+Destructuring allows to easily extract values from an array and assign them to variables:
+
+```
+const data =  [12, 23, 15, -18, 36, 7, 10];
+
+const [ , , x, , , y, , ] = data;
+console.log(x, y); // 15 7
+
+const [ , z] = data;
+console.log(z); // 23
+```
