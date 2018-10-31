@@ -63,3 +63,22 @@ console.log(x, y); // 15 7
 const [ , z] = data;
 console.log(z); // 23
 ```
+## Destructuring values from an object
+
+In a similar way, destructuring allows to extract values from an object:
+```
+const pet = {
+	species: "dog",
+	name: "Merfys",
+	color: "brown - white",
+	birthday: "June 14th",
+	age: 10,
+	weight: 28
+};
+
+const {name, birthday} = pet;
+
+console.log(name, birthday);
+
+// Merfys June 14th
+```
