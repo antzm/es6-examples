@@ -82,3 +82,17 @@ console.log(name, birthday);
 
 // Merfys June 14th
 ```
+## The `for...of` loop
+The `for...of` is a new addition to the JavaScript language and is a concise form of loop that can be used to loop any data that is iterable (i.e. string, array, map and set) as in the example below:
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+
+for (const pet of pets) {
+	console.log(pet);
+}
+
+// dog
+// cat
+// hamster
+// fish
+```
