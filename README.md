@@ -89,10 +89,45 @@ const pets = ["dog", "cat", "hamster", "fish"];
 
 for (const pet of pets) {
 	console.log(pet);
-}
+};
 
 // dog
 // cat
 // hamster
 // fish
+```
+## Arrow Functions
+Here's a script that capitalizes the names of the pets using a regular function:
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+
+const upperizedPets = pets.map(function(pet) {
+	return pet.toUpperCase();
+});
+
+for (upperizedPet of upperizedPets) {
+	console.log(upperizedPet);
+};
+
+// DOG
+// CAT
+// HAMSTER
+// FISH
+```
+And here is the same script where the regular function has been replaced by an Arrow Function:
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+
+const upperizedPets = pets.map(
+	pet => pet.toUpperCase()
+);
+
+for (upperizedPet of upperizedPets) {
+	console.log(upperizedPet);
+};
+
+// DOG
+// CAT
+// HAMSTER
+// FISH
 ```
