@@ -105,7 +105,7 @@ const upperizedPets = pets.map(function(pet) {
 	return pet.toUpperCase();
 });
 
-for (upperizedPet of upperizedPets) {
+for (const upperizedPet of upperizedPets) {
 	console.log(upperizedPet);
 };
 
@@ -114,7 +114,7 @@ for (upperizedPet of upperizedPets) {
 // HAMSTER
 // FISH
 ```
-And here is the same script where the regular function has been replaced by an Arrow Function:
+And here is the same script where the regular function has been replaced by an Arrow Function, which is a new addition to the ES6:
 ```
 const pets = ["dog", "cat", "hamster", "fish"];
 
@@ -122,7 +122,7 @@ const upperizedPets = pets.map(
 	pet => pet.toUpperCase()
 );
 
-for (upperizedPet of upperizedPets) {
+for (const upperizedPet of upperizedPets) {
 	console.log(upperizedPet);
 };
 
