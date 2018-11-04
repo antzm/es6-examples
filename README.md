@@ -131,3 +131,22 @@ for (const upperizedPet of upperizedPets) {
 // HAMSTER
 // FISH
 ```
+## The Spread `...` Operator
+The spread operator is written with three dots `...` and is used to expand (spread) arrays (or more general, iterable objects) into multiple elements.
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+console.log(...pets);
+
+// dog cat hamster fish
+```
+The spread operator can also be used to combine two or more arrays into one (instead of using concat).
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+const names =["Merfys", "Gatoulis", "Grizel", "Fegarenia"];
+
+const petsNames = [...pets, ...names];
+
+console.log(petsNames);
+
+// ["dog", "cat", "hamster", "fish", "Merfys", "Gatoulis", "Grizel", "Fegarenia"]
+```
