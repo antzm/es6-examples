@@ -150,3 +150,10 @@ console.log(petsNames);
 
 // ["dog", "cat", "hamster", "fish", "Merfys", "Gatoulis", "Grizel", "Fegarenia"]
 ```
+## The Rest `...` parameter
+The Rest parameter, represented also with three dots `...`, can be used in various ways.
+
+In JavaScript, we may have functions that don't have any parameters but when we call them, we could call them with as many parameters as we would like. Everything would work just fine, although no parameters will pass into the function.
+In a similar way, we could use e.g. 10 parameters to call a function which uses only two. In such a case, only the first two parameters will pass into the function and the rest will be ignored.
+
+But what happens with the parameters which are not used by a function? Well, all those parameters can be stored in an array using the rest `...` parameter.
