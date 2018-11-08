@@ -158,7 +158,7 @@ In a similar way, we could use e.g. 10 parameters to call a function which uses 
 
 But what happens with the parameters which are not used by a function? Well, all those parameters can be stored in an array using the rest `...` parameter.
 
-The rest parameter allows us also to call a function with as many parameters as we want, with no need to specify the number of those parameters. 
+The rest parameter allows us also to call a function with as many parameters as we want, with no need to specify the number of those parameters.
 ```
 housePets("dog", "cat", "hamster", "fish");
 function housePets(...pets) {
@@ -171,4 +171,19 @@ function housePets(...pets) {
 
 //  ["dog", "cat", "hamster", "fish"]
 ```
-In the above example, we called the function `housePets` with 4 parameters, but we could have used as many parameters as we would like. Using the rest parameter `...pets`, we take all the parameters and one by one we push them to the array ourPets.
+In the above example, we called the function `housePets` with 4 parameters, but we could have used as many parameters as we would like. Using the rest parameter `...pets`, we take all the parameters and one by one we push them to the array `ourPets`.
+
+In a similar way, we can use the rest parameter to pass into a function any number of parameters we need, like an unlimited numbers of parameters in order to calculate their sum, as in the following example:
+```
+function total(...prices) {
+	let sum = 0;
+	for (const price of prices) {
+		sum += price;
+	}
+	console.log(sum);
+}
+
+total(1.25, 2.12, 3.25, 5.18, 4.36);
+
+// 16.16
+```
