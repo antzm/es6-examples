@@ -187,3 +187,19 @@ total(1.25, 2.12, 3.25, 5.18, 4.36);
 
 // 16.16
 ```
+Let's consider now the case where we would like to add a series of numbers but we would also like to pass into the function the units we are using (i.e. Kg, gr, Km, MB etc.)
+Thus, we would use as the first parameter of the function the units we are using, followed by any number of values we would like to add together, and all these values will pass into the function as parameters using the rest parameter:
+```
+function sum(units, ...values) {
+  let total = 0;  
+  for(const value of values) {
+  	total += value;
+  }
+  console.log("Total = " + total + " " + units);
+}
+
+sum("Kgr", 8, 2, 5);
+
+// Prints:
+// Total = 15 Kgr
+```
