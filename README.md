@@ -157,6 +157,24 @@ In JavaScript, we may have functions that don't have any parameters but when we 
 In a similar way, we could use e.g. 10 parameters to call a function which uses only two. In such a case, only the first two parameters will pass into the function and the rest will be ignored.
 
 But what happens with the parameters which are not used by a function? Well, all those parameters can be stored in an array using the rest `...` parameter.
+```
+function total(a, b, ...nums) {
+	sum = a + b;
+	const restNumbers = [];
+	for (const num of nums) {
+		restNumbers.push(num);
+	}
+	console.log("Total= " + sum);
+	console.log("Array: " + restNumbers);
+}
+
+total(100, 200, 10, 20, 30);
+
+// Prints:
+
+// Total= 300
+// Array: 10,20,30
+```
 
 The rest parameter allows us also to call a function with as many parameters as we want, with no need to specify the number of those parameters.
 ```
