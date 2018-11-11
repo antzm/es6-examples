@@ -221,3 +221,4 @@ sum("Kgr", 8, 2, 5);
 // Prints:
 // Total = 15 Kgr
 ```
+The rest parameter should always be the last parameter in a function. Thus, first we should pass any other parameter we want, and at the end we would pass the rest parameter.
