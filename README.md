@@ -222,3 +222,23 @@ sum("Kgr", 8, 2, 5);
 // Total = 15 Kgr
 ```
 The rest parameter should always be the last parameter in a function. Thus, first we should pass any other parameter we want, and at the end we would pass the rest parameter.
+
+## Default Parameters
+
+A new addition to the language are the default parameters. For example, in the previous example we should always pass a `units` parameter to the function whenever we want to calculate a sum. But if we mostly calculate the sum of prices (e.g. in Euros) then we could set `Euros` as the default `units` parameter. Then, whenever we call the function we will pass only the prices we want to calculate and omit the `units` parameter. e.g.
+```
+function sum(a, b, c, units = 'Euros') {
+   	total = a + b + c;
+    console.log("Total Ammount = " + total + " " + units);
+    }
+
+sum(8, 2, 5);
+
+// Total Ammount = 15 Euros
+```
+In this case, we should pass the `units` parameter only whenever we don't calculate a sum of prices in Euros. e.g.
+```
+sum(8, 2, 5, 'Dollars');
+
+// Total Ammount = 15 Dollars
+```
