@@ -225,7 +225,9 @@ The rest parameter should always be the last parameter in a function. Thus, firs
 
 ## Default Parameters
 
-A new addition to the language are the default parameters. For example, in the previous example we should always pass a `units` parameter to the function whenever we want to calculate a sum. But if we mostly calculate the sum of prices (e.g. in Euros) then we could set `Euros` as the default `units` parameter. Then, whenever we call the function we will pass only the prices we want to calculate and omit the `units` parameter. e.g.
+A new addition to the language are the default parameters. For example, let's assume that we would like to add three prices that are usually in Euros but in some cases may also be in a different currency.
+
+So, if we mostly calculate the sum of the prices e.g. in Euros, then we could set `Euros` as the default `units` parameter. Then, whenever we call the function we will pass only the prices we want to calculate and omit the `units` parameter. e.g.
 ```
 function sum(a, b, c, units = 'Euros') {
    	total = a + b + c;
