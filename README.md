@@ -238,7 +238,9 @@ sum(8, 2, 5);
 
 // Total Ammount = 15 Euros
 ```
-In this case, we should pass the `units` parameter only whenever we don't calculate a sum of prices in Euros. e.g.
+If, on the other hand, we would like to calculate a sum of prices in a different currency, then we could simply include a fourth parameter, when calling the function, and pass a value for the units parameter.
+
+For example:
 ```
 sum(8, 2, 5, 'Dollars');
 
