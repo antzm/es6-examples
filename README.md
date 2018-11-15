@@ -246,3 +246,32 @@ sum(8, 2, 5, 'Dollars');
 
 // Total Ammount = 15 Dollars
 ```
+
+## Template Literals
+
+Template literals, are string literals that include embedded expressions. They are written between back-tick characters \` ... \`  instead of quotes.
+
+Example:
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+const names =["Merfys", "Gatoulis", "Grizel", "Fegarenia"];
+
+let ourPets = `Our pets are:
+
+${names[0]} is our ${pets[0]},
+${names[1]} is our ${pets[1]},
+${names[2]} is our ${pets[2]} and
+${names[3]} is our ${pets[3]}.`
+
+console.log(ourPets);
+
+// Prints
+
+// Our pets are:
+//
+// Merfys is our dog,
+// Gatoulis is our cat,
+// Grizel is our hamster and
+// Fegarenia is our fish.
+```
+Template literals preserve newlines as part of the string, so there is no need to use newline characters and also there is no need to use the `+` symbol which is the string concatenation operator.
