@@ -275,3 +275,28 @@ console.log(ourPets);
 // Fegarenia is our fish.
 ```
 Template literals preserve newlines as part of the string, so there is no need to use newline characters and also there is no need to use the `+` symbol which is the string concatenation operator.
+
+In the next example, we can see another way to use the Template Literals with a for loop.
+```
+const pets = ["dog", "cat", "hamster", "fish"];
+const names =["Merfys", "Gatoulis", "Grizel", "Fegarenia"];
+
+function petNames() {
+	let ourPets = ``
+	for (let i=0; i<4; i++) {
+		ourPets += `Our ${pets[i]} is ${names[i]}
+`
+	}
+	return ourPets;
+}
+
+petNames();
+
+// Prints:
+
+// "Our dog is Merfys
+// Our cat is Gatoulis
+// Our hamster is Grizel
+// Our fish is Fegarenia
+// "
+```
