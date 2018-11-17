@@ -96,6 +96,25 @@ for (const pet of pets) {
 // hamster
 // fish
 ```
+And here's another example of a `for...of` loop showing that we can break or stop the loop at anytime:
+```
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+for (const num of nums) {
+	if (num % 3 === 0) {
+	console.log(num);
+	}
+}
+
+// Prints:
+
+// 3
+// 6
+// 9
+// 12
+// 15
+```
+
 ## Arrow Functions
 Here's a script that capitalizes the names of the pets using a regular function:
 ```
