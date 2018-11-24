@@ -96,7 +96,7 @@ for (const pet of pets) {
 // hamster
 // fish
 ```
-And here's another example of a `for...of` loop showing that we can break or stop the loop at anytime:
+And here's another example of a `for...of` loop, which prints the numbers that are divisible be 3, showing that we can break or stop the loop at anytime:
 ```
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
