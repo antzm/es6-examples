@@ -151,7 +151,7 @@ for (const upperizedPet of upperizedPets) {
 // FISH
 ```
 ## The Spread `...` Operator
-The spread operator is written with three dots `...` and is used to expand (spread) arrays (or more general, iterable objects) into multiple elements.
+The spread operator is written with three dots `...` and is used to expand (spread) arrays (or in general, any iterable object) into multiple elements.
 ```
 const pets = ["dog", "cat", "hamster", "fish"];
 console.log(...pets);
@@ -175,7 +175,7 @@ The Rest parameter, represented also with three dots `...`, can be used in vario
 In JavaScript, we may have functions that don't have any parameters but when we call them, we could call them with as many parameters as we would like. Everything would work just fine, although no parameters will pass into the function.
 In a similar way, we could use e.g. 10 parameters to call a function which uses only two. In such a case, only the first two parameters will pass into the function and the rest will be ignored.
 
-But what happens with the parameters which are not used by a function? Well, all those parameters can be stored in an array using the rest `...` parameter.
+But what happens with the parameters which are not used by a function? Well, for example, all those parameters could be stored in an array using the rest `...` parameter.
 ```
 function total(a, b, ...nums) {
 	sum = a + b;
@@ -195,7 +195,7 @@ total(100, 200, 10, 20, 30);
 // Array: 10,20,30
 ```
 
-The rest parameter allows us also to call a function with as many parameters as we want, with no need to specify the number of those parameters.
+The rest parameter allows us also to call a function with as many parameters as we want, with no need to specify beforehand the exact number of those parameters.
 ```
 housePets("dog", "cat", "hamster", "fish");
 function housePets(...pets) {
@@ -210,7 +210,7 @@ function housePets(...pets) {
 ```
 In the above example, we called the function `housePets` with 4 parameters, but we could have used as many parameters as we would like. Using the rest parameter `...pets`, we take all the parameters and one by one we push them to the array `ourPets`.
 
-In a similar way, we can use the rest parameter to pass into a function any number of parameters we need, like an unlimited numbers of parameters in order to calculate their sum, as in the following example:
+In a similar way, we can use the rest parameter to pass into a function any number of parameters we need, like an unlimited number of parameters in order to calculate their sum, as in the following example:
 ```
 function total(...prices) {
 	let sum = 0;
